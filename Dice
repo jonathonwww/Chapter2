@@ -1,0 +1,18 @@
+/**
+ * This adds up the random rolls of two die and gets the sum of the rolls.
+ * @author Jonathon Webster
+ * @version September 4, 2017
+ */
+public class Dice {
+
+	public static void main(String[] args) {
+
+		int dice1, dice2;
+		
+		dice1 = ((int)(Math.random() * 6) + 1);
+		dice2 = ((int)(Math.random() * 6) + 1);
+		
+		System.out.println("The first die rolled a " + dice1 + ". The secound die rolled a " + dice2 + ".");
+		System.out.println("The sum of the rolls is " + (dice1 + dice2) + ".");
+	}
+}
