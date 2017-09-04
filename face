@@ -1,0 +1,59 @@
+/**
+ * To draw my face.
+ * @author Jonathon Webster
+ * @version September 4, 2017
+ */
+import java.applet.Applet;
+import java.awt.*;
+public class Face extends Applet{
+	
+	public void paint (Graphics page){
+		
+		final int MIDh = 340;// middle of the height
+		final int MIDw = 290;// middle of the width
+		
+		int R = 255;
+		int G = 204;
+		int B = 153;
+		Color skin = new Color(R,G,B);
+		setBackground (Color.GREEN);
+		page.setColor(skin);
+		page.fillOval (40, 40, 500, 600);
+		page.setColor(Color.WHITE);
+		// this codes the head
+		
+		page.fillOval((MIDw - 150), (MIDh - 100), 100, 60);
+		page.fillOval((MIDw + 60), (MIDh - 100), 100, 60);
+		R = 0;
+		G = 153;
+		B = 76;
+		Color eye = new Color(R,G,B);
+		page.setColor(eye);
+		page.fillOval((MIDw - 130), (MIDh - 80), 50, 30);
+		page.fillOval((MIDw + 80), (MIDh - 80), 50, 30);
+		page.setColor(Color.BLACK);
+		page.fillOval(MIDw - 115, MIDh - 75, 20, 20);
+		page.fillOval(MIDw + 95, MIDh - 75, 20, 20);
+		// this codes the eyes
+		
+		page.setColor(Color.BLACK);
+		page.drawLine(MIDw, MIDh, (MIDw + 60), MIDh + 60);
+		page.drawLine(MIDw, (MIDh + 60), (MIDw + 60), (MIDh + 60));
+		page.drawArc((MIDw - 110), (MIDh + 100), 200, 100, 190, 160);
+		// this codes the mouth
+		
+		R = 155;
+		G = 150;
+		B = 0;
+		Color hair = new Color(R,G,B);
+		page.setColor(hair);
+		page.fillArc((MIDw - 150), (MIDh - 130), 100, 60, -190, -160);
+		page.fillArc((MIDw + 60), (MIDh - 130), 100, 60, -190, -160);
+		//make eyebrows
+		
+		page.fillArc(50, 40, 450, 150, -90, -300);
+		page.fillOval(40, 80, 100, 200);
+		page.fillOval(460, 100, 70, 200);
+		//hair
+	}
+}
