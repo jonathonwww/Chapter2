@@ -1,0 +1,31 @@
+/**
+ * This program computes the distance between two points.
+ * @author Jonathon Webster
+ * @version September 4, 2017
+ */
+import java.util.Scanner;
+public class Distance {
+	
+	public static void main(String[] args) {
+	
+		int x1, x2, y1, y2;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter your first x-value: ");
+		x1 = scan.nextInt();
+		
+		System.out.print("Enter your first y-value: ");
+		y1 = scan.nextInt();
+		
+		System.out.print("Enter your secound x-value: ");
+		x2 = scan.nextInt();
+		
+		System.out.print("Enter your secound y-value: ");
+		y2 = scan.nextInt();
+		
+		double distance = Math.sqrt(Math.pow(x1 - x2,2) + Math.pow(y1 - y2,2));
+		
+		System.out.println("Distance of ( " + x1 + ", " + y2 + ")" + "and" +"( " + x1 + ", " + y2 + ")" + " equals " 
+		+ distance);
+	}
+}
