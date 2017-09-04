@@ -21,6 +21,10 @@ public class Paint
 		double paintNeeded;
 		//declare double paintNeeded;
 		
+		int window;
+		
+		int door;
+		
 		Scanner scan = new Scanner(System.in);
 		//declare and initialize Scanner object
 		
@@ -36,7 +40,13 @@ public class Paint
 		height = scan.nextInt();
 		//Prompt for and read in the height of the room
 		
-		TotalSqFt =  (width * height * 2) + (length * height * 2);
+		System.out.println("\n# of windows:");
+		window = scan.nextInt();
+		
+		System.out.println("\n# of doors:");
+		door = scan.nextInt();
+		
+		TotalSqFt =  (width * height * 2) + (length * height * 2) - ((15 * window) + (20 * door));
 		
 		System.out.println("\nYour total area is  " + TotalSqFt + " feet squared.");
 		/*Compute the total square feet to be painted--think
