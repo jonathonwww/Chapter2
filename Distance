@@ -25,7 +25,7 @@ public class Distance {
 		
 		double distance = Math.sqrt(Math.pow(x1 - x2,2) + Math.pow(y1 - y2,2));
 		
-		System.out.println("Distance of ( " + x1 + ", " + y2 + ")" + "and" +"( " + x1 + ", " + y2 + ")" + " equals " 
+		System.out.println("Distance of ( " + x1 + ", " + y1 + ")" + "and" +"( " + x2 + ", " + y2 + ")" + " equals " 
 		+ distance);
 	}
 }
