@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class CircleTest
+{
+    public static void main (String[] args)
+    {
+        /*
+         * Prompt user for radius and crate circle
+         * object. Print Area.
+         */
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the radius: ");
+        double r = scan.nextDouble();
+        Circle circle1 = new Circle(r);
+        double area = circle1.getArea();
+        double circumference = circle1.getCircumference();
+        System.out.println("Circle 1 radius = " + r + "; circle 1 area = " + area + "; circle 1 circumference = "
+        		+ circumference);
+        /*
+         * Prompt user for radius and crate circle
+         * object. Print Area.
+         */
+        System.out.println("\n\nEnter a radius: ");
+        double r2 = scan.nextDouble();
+        Circle circle2 = new Circle(r2);
+        double area2 = circle2.getArea();
+        double circumference2 = circle2.getCircumference();
+        System.out.println ("Circle 2 radius = " + r2 + " ;circle 2 area = " + area2 + "; circle 2 circumference = "
+        		+ circumference2);
+        
+        System.out.println("\n\nEnter a radius: ");
+        double r3 = scan.nextDouble();
+        Circle circle3 = new Circle(r3);
+        double area3 = circle3.getArea();
+        double circumference3 = circle3.getCircumference();
+        System.out.println ("Circle 3 radius = " + r3 + " ;circle 3 area = " + area3 + "; circle 3 circumference = "
+        		+ circumference3);
+    }
+}
